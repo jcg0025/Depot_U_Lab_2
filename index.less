@@ -1,0 +1,171 @@
+@import "variables.less";
+@import "mixins.less";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*NAV*/
+.nav {
+    background-color: @primaryColor;
+    padding-top: @navPad;
+    padding-bottom: @navPad;
+
+    li {
+        display: inline;
+        }
+    
+    a {
+        text-decoration: none;
+        color: @negativeSpace;
+        margin-left: 30px;
+        }
+}
+.center {
+    text-align: center;
+}
+
+/*BULK*/
+h2 {
+    text-align: center;
+    border: solid 3px @secColor;
+    border-left: none;
+    border-right: none;
+    margin-right: @h2margin;
+    margin-left: @h2margin;
+    padding-top: @h2padding;
+    padding-bottom: @h2padding;
+}
+
+.wrap {
+
+    .R {
+        float: right;
+        width: @columnWidth;
+        margin-right: @columnMargin; 
+    }
+
+    .L {
+    float: left;
+    width: @columnWidth;
+    margin-left: @columnMargin;
+    }
+}
+
+.tech {
+    position: relative;
+    margin-top: 300px;
+}
+
+.projects {
+    position: relative;
+    margin-top: 200px;
+
+    p {
+    margin-top: -20px;
+    margin-left: @bulkMargin;
+    margin-right: @bulkMargin;
+    }
+}
+
+h1 {
+    margin-top: 30px;
+}
+
+/*CONTACT*/
+.contact-form {
+    width: 800px;
+    height: 550px;
+    margin-left: @bulkMargin;
+    background-color: @primaryColor;
+    margin-top: @formTop;
+    padding-top: 40px;
+    border: solid 3px @secColor;
+    .border-radius;
+}
+
+input {
+    width: 360px;
+    height: 40px;
+    .border-radius;
+    font-size: 20px;
+    margin-left: @inputMargin;
+   
+}
+
+.label {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: @inputMargin;
+    color: @negativeSpace;
+}
+
+.messages {
+    height: 200px;
+}
+
+.send {
+    margin-top: @formTop;
+    background-color: @negativeSpace;
+    color: @sendText;
+}
+
+
+
+/*FOOTER*/
+.footer {
+    margin-top:200px;
+    margin-left:500px;
+
+    li{
+    display: inline;
+    }
+
+    a {
+    margin-left: 40px;
+    color: @primaryColor;
+    text-decoration: none;
+    }
+
+    p {
+    margin-left:80px;
+    color: @primaryColor;
+    }
+}
+
+
+
+
+/*EXPERIENCE*/
+h4 {
+    margin-left: @bulkMargin;
+    margin-right: @bulkMargin;
+}
+
+.lorem {
+    font-weight: bold;
+}
+
+.ipsum {
+    text-indent: @indent;
+    font-style: italic;
+    margin-top: @expTop;
+}
+
+.dolor {
+    text-indent: @indent;
+    margin-top: @expTop;
+}
+
+.experience {
+    margin-left: @bulkMargin;
+}
+
+
+/*MISC*/
+.education {
+    margin-left: @bulkMargin;
+}
+
+a:hover {
+    color: @linkColor;
+}
